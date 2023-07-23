@@ -6,7 +6,7 @@ save_file = "data.json"
 def load_data():
     try:
         with open(save_file, "r") as file:
-            notes = json.load(file) # TODO Реализовать сохранение с использованием ';'
+            notes = json.load(file)
     except FileNotFoundError:
         notes = []
     return notes
